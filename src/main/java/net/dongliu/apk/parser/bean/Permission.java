@@ -1,8 +1,5 @@
 package net.dongliu.apk.parser.bean;
 
-
-import javax.annotation.Nullable;
-
 /**
  * permission provided by the app
  *
@@ -46,7 +43,6 @@ public class Permission {
         return group;
     }
 
-    @Nullable
     public String getProtectionLevel() {
         return protectionLevel;
     }

@@ -1,7 +1,5 @@
 package net.dongliu.apk.parser.struct;
 
-import javax.annotation.Nullable;
-
 /**
  * Apk res value struct.
  * Only for description now, The value is hold in ResourceValue
@@ -30,7 +28,6 @@ public class ResValue {
     /**
      * the real data represented by string
      */
-    @Nullable
     private ResourceValue data;
 
     @Override

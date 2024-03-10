@@ -3,7 +3,6 @@ package net.dongliu.apk.parser;
 import net.dongliu.apk.parser.bean.ApkSignStatus;
 import net.dongliu.apk.parser.utils.Inputs;
 
-import javax.annotation.Nullable;
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
@@ -26,7 +25,6 @@ public class ApkFile extends AbstractApkFile implements Closeable {
 
     private final ZipFile zf;
     private File apkFile;
-    @Nullable
     private FileChannel fileChannel;
 
     public ApkFile(File apkFile) throws IOException {

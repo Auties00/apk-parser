@@ -2,7 +2,6 @@ package net.dongliu.apk.parser.struct.resource;
 
 import net.dongliu.apk.parser.struct.StringPool;
 
-import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -35,7 +34,6 @@ public class ResourcePackage {
         this.typeSpecMap.put(typeSpec.getId(), typeSpec);
     }
 
-    @Nullable
     public TypeSpec getTypeSpec(short id) {
         return this.typeSpecMap.get(id);
     }
@@ -49,7 +47,6 @@ public class ResourcePackage {
         types.add(type);
     }
 
-    @Nullable
     public List<Type> getTypes(short id) {
         return this.typesMap.get(id);
     }

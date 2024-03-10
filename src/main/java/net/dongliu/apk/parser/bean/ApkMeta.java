@@ -2,7 +2,6 @@ package net.dongliu.apk.parser.bean;
 
 import net.dongliu.apk.parser.AbstractApkFile;
 
-import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,15 +28,15 @@ public class ApkMeta {
     private final String installLocation;
     private final String minSdkVersion;
     private final String targetSdkVersion;
-    @Nullable
+    
     private final String maxSdkVersion;
-    @Nullable
+    
     private final String compileSdkVersion;
-    @Nullable
+    
     private final String compileSdkVersionCodename;
-    @Nullable
+    
     private final String platformBuildVersionCode;
-    @Nullable
+    
     private final String platformBuildVersionName;
     private final GlEsVersion glEsVersion;
     private final boolean anyDensity;
@@ -139,27 +138,27 @@ public class ApkMeta {
         return targetSdkVersion;
     }
 
-    @Nullable
+    
     public String getMaxSdkVersion() {
         return maxSdkVersion;
     }
 
-    @Nullable
+    
     public String getCompileSdkVersion() {
         return compileSdkVersion;
     }
 
-    @Nullable
+    
     public String getCompileSdkVersionCodename() {
         return compileSdkVersionCodename;
     }
 
-    @Nullable
+    
     public String getPlatformBuildVersionCode() {
         return platformBuildVersionCode;
     }
 
-    @Nullable
+    
     public String getPlatformBuildVersionName() {
         return platformBuildVersionName;
     }

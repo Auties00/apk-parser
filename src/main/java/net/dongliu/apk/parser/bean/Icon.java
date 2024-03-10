@@ -1,6 +1,5 @@
 package net.dongliu.apk.parser.bean;
 
-import javax.annotation.Nullable;
 import java.io.Serializable;
 
 /**
@@ -44,7 +43,6 @@ public class Icon implements IconFace, Serializable {
     /**
      * Icon data may be null, due to some apk missing the icon file.
      */
-    @Nullable
     public byte[] getData() {
         return data;
     }

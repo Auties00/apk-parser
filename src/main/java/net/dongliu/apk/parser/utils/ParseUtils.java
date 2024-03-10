@@ -7,7 +7,6 @@ import net.dongliu.apk.parser.struct.ResourceValue;
 import net.dongliu.apk.parser.struct.StringPool;
 import net.dongliu.apk.parser.struct.StringPoolHeader;
 
-import javax.annotation.Nullable;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
@@ -147,7 +146,6 @@ public class ParseUtils {
     /**
      * read res value, convert from different types to string.
      */
-    @Nullable
     public static ResourceValue readResValue(ByteBuffer buffer, StringPool stringPool) {
 //        ResValue resValue = new ResValue();
         int size = Buffers.readUShort(buffer);

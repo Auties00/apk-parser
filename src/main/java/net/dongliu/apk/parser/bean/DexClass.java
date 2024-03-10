@@ -2,8 +2,6 @@ package net.dongliu.apk.parser.bean;
 
 import net.dongliu.apk.parser.struct.dex.DexClassStruct;
 
-import javax.annotation.Nullable;
-
 /**
  * @author dongliu
  */
@@ -43,7 +41,7 @@ public class DexClass {
         return classType;
     }
 
-    @Nullable
+    
     public String getSuperClass() {
         return superClass;
     }

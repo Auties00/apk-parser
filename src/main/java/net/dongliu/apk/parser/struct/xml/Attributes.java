@@ -1,7 +1,5 @@
 package net.dongliu.apk.parser.struct.xml;
 
-import javax.annotation.Nullable;
-
 /**
  * xml node attributes
  *
@@ -19,7 +17,6 @@ public class Attributes {
         attributes[i] = attribute;
     }
 
-    @Nullable
     public Attribute get(String name) {
         for (Attribute attribute : attributes) {
             if (attribute.getName().equals(name)) {
@@ -33,7 +30,6 @@ public class Attributes {
     /**
      * Get attribute with name, return value as string
      */
-    @Nullable
     public String getString(String name) {
         Attribute attribute = get(name);
         if (attribute == null) {
@@ -51,7 +47,6 @@ public class Attributes {
         return value == null ? b : Boolean.parseBoolean(value);
     }
 
-    @Nullable
     public Integer getInt(String name) {
         String value = getString(name);
         if (value == null) {
@@ -63,7 +58,6 @@ public class Attributes {
         return Integer.valueOf(value);
     }
 
-    @Nullable
     public Long getLong(String name) {
         String value = getString(name);
         if (value == null) {

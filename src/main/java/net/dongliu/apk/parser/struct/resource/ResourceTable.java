@@ -4,7 +4,7 @@ import net.dongliu.apk.parser.struct.ResourceValue;
 import net.dongliu.apk.parser.struct.StringPool;
 import net.dongliu.apk.parser.utils.ResourceLoader;
 
-import javax.annotation.Nonnull;
+
 import java.util.*;
 
 /**
@@ -38,7 +38,6 @@ public class ResourceTable {
     /**
      * Get resources match the given resource id.
      */
-    @Nonnull
     public List<Resource> getResourcesById(long resourceId) {
         // An Android Resource id is a 32-bit integer. It comprises
         // an 8-bit Package id [bits 24-31]

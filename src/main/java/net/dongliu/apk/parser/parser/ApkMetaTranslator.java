@@ -8,8 +8,6 @@ import net.dongliu.apk.parser.struct.resource.ResourceTable;
 import net.dongliu.apk.parser.struct.resource.Type;
 import net.dongliu.apk.parser.struct.xml.*;
 
-import javax.annotation.Nonnull;
-import javax.annotation.Nullable;
 import java.util.*;
 
 /**
@@ -24,10 +22,10 @@ public class ApkMetaTranslator implements XmlStreamer {
     private List<IconPath> iconPaths = Collections.emptyList();
 
     private ResourceTable resourceTable;
-    @Nullable
+
     private Locale locale;
 
-    public ApkMetaTranslator(ResourceTable resourceTable, @Nullable Locale locale) {
+    public ApkMetaTranslator(ResourceTable resourceTable, Locale locale) {
         this.resourceTable = Objects.requireNonNull(resourceTable);
         this.locale = locale;
     }
@@ -181,12 +179,10 @@ public class ApkMetaTranslator implements XmlStreamer {
 
     }
 
-    @Nonnull
     public ApkMeta getApkMeta() {
         return apkMetaBuilder.build();
     }
 
-    @Nonnull
     public List<IconPath> getIconPaths() {
         return iconPaths;
     }
