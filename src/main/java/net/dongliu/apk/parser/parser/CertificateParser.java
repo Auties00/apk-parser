@@ -1,6 +1,5 @@
 package net.dongliu.apk.parser.parser;
 
-import net.dongliu.apk.parser.ApkParsers;
 import net.dongliu.apk.parser.bean.CertificateMeta;
 
 import java.security.cert.CertificateException;
@@ -21,9 +20,6 @@ public abstract class CertificateParser {
     }
 
     public static CertificateParser getInstance(byte[] data) {
-        if (ApkParsers.useBouncyCastle()) {
-            return new BCCertificateParser(data);
-        }
         return new JSSECertificateParser(data);
     }
 
